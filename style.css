@@ -57,7 +57,7 @@ p{
 }
 
 ul {
-  list-style: none;
+  list-style: lower-roman;
   margin-left: 20px;
   line-height: 1.3;
 
