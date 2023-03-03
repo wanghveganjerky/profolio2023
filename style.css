@@ -8,6 +8,9 @@ body {
   overflow: scroll !important;
 }
 
+.custom-cursor {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32" height="32"><circle cx="8" cy="8" r="7" fill="black"/></svg>') 8 8, auto;
+}
 
 .header {
   width: 80%;
@@ -55,6 +58,7 @@ p{
   width: 80%;
   padding-top: 60px;
   margin-left: 60px;
+  margin-bottom: 7%;
 
 }
 
