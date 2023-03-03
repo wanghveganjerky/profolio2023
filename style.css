@@ -11,7 +11,7 @@ body {
 .header {
   width: 80%;
   background-color: #fff;
-  margin-left: 120px;
+  margin-left: 80px;
   margin-top: 7%;
 }
 
@@ -31,12 +31,12 @@ p{
 .bio {
   width: 80%;
   background-color: #fff;
-  margin-left: 120px;
+  margin-left: 80px;
 
 }
 .content{
   padding-top: 42px;
-  margin-left: 70px;
+
 }
 
 .aboutButton{
@@ -48,8 +48,8 @@ p{
 
 .footer {
   width: 80%;
-  padding-top: 120px;
-  margin-left: 120px;
+  margin-left: 80px;
+
 }
 
 ul {
@@ -78,4 +78,5 @@ a:hover {
 
 .updatedDate{
   font-size: 2vh;
+  
 }
