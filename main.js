@@ -1,9 +1,14 @@
-const lastUpdatedElem = document.getElementById("last-updated");
-const lastUpdated = new Date(document.lastModified);
-const formattedDate = `${lastUpdated.getMonth() + 1}/${lastUpdated.getDate()}/${lastUpdated.getFullYear()}`;
-lastUpdatedElem.textContent = `Last updated: ${formattedDate}`;
+const updatedDateElem = document.getElementById("last-updated");
+const options = { timeZone: "America/New_York" };
 
+function updateTime() {
+  const now = new Date();
+  const formattedDate = now.toLocaleString("en-US", options);
+  updatedDateElem.textContent = `${formattedDate}`;
+}
 
+updateTime();
+setInterval(updateTime, 1000);
 
 
 //whazzzzupppppp
