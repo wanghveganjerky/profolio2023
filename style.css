@@ -90,11 +90,11 @@ li {
 
 a {
   text-decoration: none; 
-  color: blue; 
+  color: #0000ff; 
 }
 
 a:hover {
-  color:#f81dff; 
+  color:  #66ff33; 
 }
 
 /* 
