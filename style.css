@@ -56,12 +56,12 @@ h2{
 
 }
 
-.aboutButton{
+/* .aboutButton{
   background-color: transparent;
   border: none;
   outline: none;
 
-}
+} */
 
 .footer {
   width: 80%;
@@ -89,18 +89,15 @@ li {
 }
 
 a {
-  color: #333;
-  text-decoration: none;
-  border-bottom: 2px solid #333;
-
+  text-decoration: none; 
+  color: blue; 
 }
 
 a:hover {
-  color: #666;
-  border-bottom: 2px solid #333;
-  
+  color:#f81dff; 
 }
 
+/* 
 .updatedDate{
   font-size: 2vh;
-}
+} */
