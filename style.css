@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Nanum+Gothic+Coding:wght@700&display=swap');
-/* @media screen and (max-width: 768px){
-  body{
-    
+
+*{
+  background-color: #F499CA;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
   }
-} */
+}
 
 body {
   margin: 0;
@@ -11,6 +17,7 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
   overflow: scroll !important;
   transition: background-color 0.5s ease-out;
+  /* background-color: #F499CA; */
 }
 
 
@@ -20,7 +27,7 @@ body {
 
 .header {
   width: 80%;
-  background-color: #fff;
+  /* background-color: #fff; */
   margin-left: 40px;
   margin-top: 7%;
 }
@@ -30,6 +37,7 @@ h1{
   line-height: 1.7;
   text-align:left;
   position:relative;
+  color:#EB008C;
 
 }
 
@@ -44,7 +52,7 @@ h2{
 
 .bio {
   width: 80%;
-  background-color: #fff;
+  /* background-color: #fff; */
   margin-left: 40px;
 
 }
@@ -52,16 +60,9 @@ h2{
 
 .content{
   padding-top: 42px;
-  
 
 }
 
-/* .aboutButton{
-  background-color: transparent;
-  border: none;
-  outline: none;
-
-} */
 
 .footer {
   width: 80%;
@@ -90,11 +91,11 @@ li {
 
 a {
   text-decoration: none; 
-  color: #0000ff; 
+  color:  #66ff33; 
 }
 
 a:hover {
-  color:  #66ff33; 
+  color:  #0000ff; 
 }
 
 /* 
