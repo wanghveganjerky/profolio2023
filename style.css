@@ -53,6 +53,7 @@ h2{
   text-align:left;
   position:relative;
   z-index: 2;
+  background-color: transparent;
 }
 .logo {
   background-color: transparent;
