@@ -10,8 +10,7 @@
 
 @media screen and (max-width: 768px) {
   body {
-    overflow-y: scroll !important;
-    overflow-x: hidden !important;
+    overflow: auto;
   }
 }
 
@@ -20,17 +19,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Manrope', sans-serif;
-  overflow: scroll !important;
+  overflow: auto;
   /* background-color: #F499CA; */
-  width: 30%;
+  width: 100%;
 }
 
 
 .header {
   width: 80%;
   /* background-color: #fff; */
-  margin-left: 40px;
-  margin-top: 7%;
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
   /* z-index: 2; */
 }
 
@@ -64,9 +64,10 @@ h2{
   margin: 0;
   padding: 0;
   position:fixed;
-  left:30%;
-  top:100px; 
-  font-size: 357px; 
+  left:10%;
+  top:20%; 
+  font-size: 30vw; 
+
   /* display: inline; */
   /* background-color: transparent transparent; */
   font-family: 'Space Grotesk', sans-serif;
@@ -78,7 +79,8 @@ h2{
 .bio {
   width: 80%;
   /* background-color: #fff; */
-  margin-left: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 
@@ -90,8 +92,8 @@ h2{
 .footer {
   width: 80%;
   padding-top: 60px;
-  margin-left: 40px;
-  margin-bottom: 7%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 ul {
@@ -123,7 +125,7 @@ a:hover {
   font-size: 2vh;
 } */
 
-@keyframes wobble {
+/* @keyframes wobble {
   0% { transform: rotate(0deg); }
   15% { transform: rotate(-25deg); }
   30% { transform: rotate(20deg); }
@@ -141,4 +143,4 @@ a:hover {
 #wobble-element.wobble {
   animation: wobble 2s ease-in-out;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-}
+/* } */ 
