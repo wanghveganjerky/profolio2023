@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Nanum+Gothic+Coding:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
 
 
 *{
-  background-color: #F499CA;
+  background-color: white;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32" height="32"><circle cx="8" cy="8" r="7" fill="black"/></svg>') 8 8, auto;
 }
 
@@ -19,9 +19,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Manrope', sans-serif;
   overflow: scroll !important;
   /* background-color: #F499CA; */
+  width: 30%;
 }
 
 
@@ -37,11 +38,11 @@ a{
   background-color: transparent;
 }
 h1{
-  font-size: 3.0vh;
+  font-size: 3.3vh;
   line-height: 1.7;
   text-align:left;
   position:relative;
-  color:#EB008C;
+  color:#000000;
   z-index: 2;
   background-color: transparent;
 }
@@ -121,3 +122,23 @@ a:hover {
 .updatedDate{
   font-size: 2vh;
 } */
+
+@keyframes wobble {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(-25deg); }
+  30% { transform: rotate(20deg); }
+  45% { transform: rotate(-15deg); }
+  60% { transform: rotate(10deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+#wobble-element {
+  display: inline-block;
+  transition: all 1.5s ease-in-out;
+}
+
+#wobble-element.wobble {
+  animation: wobble 2s ease-in-out;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}

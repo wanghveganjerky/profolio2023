@@ -8,7 +8,14 @@
 // }
 
 // updateTime()
-
+document.getElementById('wobble-element').addEventListener('mouseover', function(){
+    this.classList.add('wobble');
+  });
+  
+  document.getElementById('wobble-element').addEventListener('animationend', function(){
+    this.classList.remove('wobble');
+  });
+  
 
 
 //whazzzzupppppp
