@@ -12,8 +12,16 @@
   body {
     overflow: auto;
   }
+  .container {
+    padding: 0 10px;  /* less padding on smaller screens */
+  }
 }
 
+.container {
+  width: 100%;  /* take up full width */
+  max-width: 800px;  /* but don't go over 800px */
+  padding: 0 20px;  /* add some horizontal padding */
+}
 
 body {
   margin: 0;
@@ -21,7 +29,10 @@ body {
   font-family: 'Manrope', sans-serif;
   overflow: auto;
   /* background-color: #F499CA; */
-  width: 30%;
+  width: 100%;  /* take up full width */
+  display: flex;  /* center child content */
+  justify-content: center; /* center horizontally */
+  align-items: flex-start; 
 }
 
 
