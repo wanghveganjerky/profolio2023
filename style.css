@@ -92,17 +92,34 @@ li {
   margin-bottom: 7%;
   font-size: 1.7vh; 
   padding-top: 1.7 px;
-  color:  #66ff33; 
+  color:  #01EA00; 
 }
 
 
 a {
   text-decoration: none; 
-  color:  #66ff33; 
+  color:  #01EA00; 
 }
 
 
 a:hover {
   color:  #0000ff; 
 }
+
+/* Additional CSS for hover on project's image preview */
+.hoverImagePreview {
+  position: absolute;
+  display: none;
+  width: 200px;
+  height: auto;
+  z-index: 100;
+}
+
+.hoverImagePreview img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
 
