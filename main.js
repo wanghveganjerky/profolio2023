@@ -8,10 +8,8 @@ const hoverPreviewIMG = document.getElementById('h2-hover-image-preview-img');
 function showHoverPreview(event) {
   let targetElement = event.target;
 
-  // Traverse up the DOM to find the h2 element if the event target isn't the h2 itself
-  while (targetElement.tagName.toLowerCase() !== 'h2') {
-    targetElement = targetElement.parentElement;
-    if (!targetElement) return; // Exit if we've reached the root and found no h2
+  if (targetElement.tagName.toLowerCase() !== 'h2') {
+   return;
   }
 
   // Get the image source from the data attribute
@@ -51,15 +49,15 @@ function setTime() {
   let timePhrase;
 
   if (timeSince < minuteMs) {
-    timePhrase = "a few moments ago";
+    timePhrase = "few moments ago";
   } else if (timeSince < hourMs) {
-    timePhrase = Math.floor(timeSince / minuteMs) + " minutes ago";
+    timePhrase = "few minutes ago";
   } else if (timeSince < dayMs) {
-    timePhrase = Math.floor(timeSince / hourMs) + " hours ago";
+    timePhrase = "few hours ago";
   } else if (timeSince < monthMs) {
-    timePhrase = Math.floor(timeSince / dayMs) + " days ago";
+    timePhrase = "few days ago";
   } else {
-    timePhrase = Math.floor(timeSince / monthMs) + " months ago";
+    timePhrase = "few months ago";
   }
 
   document.querySelector(".js-last-updated").innerText = "Last updated @ " + timePhrase;
@@ -67,6 +65,7 @@ function setTime() {
 
 // Run setTime function when the document is fully loaded
 document.addEventListener('DOMContentLoaded', setTime);
+
 
 
 
