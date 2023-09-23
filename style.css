@@ -12,7 +12,7 @@
   }
 }
 
-.container {
+.introContainer {
   max-width: 600px; 
   width: 100%;
 }
@@ -24,7 +24,7 @@ body {
   -webkit-font-smoothing: antialiased; 
 }
 
-.intro {
+.introText {
   width: 100%;
 }
 
