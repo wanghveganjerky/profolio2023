@@ -39,6 +39,13 @@ h2{
   line-height: 1.7;
 }
 
+li {
+  list-style-type: none; /* Remove default bullet */
+  position: relative;
+  padding-left: 24px; /* Leave space for the custom bullet */
+}
+
+
 a {
   text-decoration: none; 
   color:  #01EA00; 

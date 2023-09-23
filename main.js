@@ -13,7 +13,7 @@ function showHoverPreview(event) {
     targetElement = targetElement.parentElement;
     if (!targetElement) return; // Exit if we've reached the root and found no h2
   }
-  
+
   // Get the image source from the data attribute
   const imgFileName = targetElement.getAttribute('data-img-src');
   // Set the image source
@@ -35,6 +35,39 @@ h2Elements.forEach(h2 => {
   h2.addEventListener('mousemove', showHoverPreview);  // updated to new function name
   h2.addEventListener('mouseout', hideHoverPreview);
 });
+
+
+function setTime() {
+  // Set the updatedAt time to September 23, 2023, at like 5 pm
+  const updatedAt = new Date(2023, 8, 23, 17, 0, 0); // months are zero-based in JavaScript
+  const today = new Date();
+  // Calculate the time difference between the current time and the updatedAt time
+  const timeSince = today - updatedAt;
+  const minuteMs = 60000;
+  const hourMs = 3600000;
+  const dayMs = 86400000;
+  const monthMs = 2628000000; // An approximation for a month in milliseconds
+  
+  let timePhrase;
+
+  if (timeSince < minuteMs) {
+    timePhrase = "a few moments ago";
+  } else if (timeSince < hourMs) {
+    timePhrase = Math.floor(timeSince / minuteMs) + " minutes ago";
+  } else if (timeSince < dayMs) {
+    timePhrase = Math.floor(timeSince / hourMs) + " hours ago";
+  } else if (timeSince < monthMs) {
+    timePhrase = Math.floor(timeSince / dayMs) + " days ago";
+  } else {
+    timePhrase = Math.floor(timeSince / monthMs) + " months ago";
+  }
+
+  document.querySelector(".js-last-updated").innerText = "Last updated @ " + timePhrase;
+}
+
+// Run setTime function when the document is fully loaded
+document.addEventListener('DOMContentLoaded', setTime);
+
 
 
 
