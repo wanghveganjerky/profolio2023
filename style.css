@@ -13,6 +13,7 @@
 
 .container {
   max-width: 800px; 
+  width: 100%;
 }
 
 body {
@@ -33,7 +34,7 @@ body {
 }
 
 h1{
-  font-size: 1.8em;
+  font-size: 1.81em;
   line-height: 1.7;
   text-align:left;
   position:relative;
@@ -59,7 +60,7 @@ ul {
 
 li {
   margin-bottom: 7%;
-  font-size: 1.3vh; 
+  font-size: 1em; 
   padding-top: 1.7 px;
   color:  #01EA00; 
 }
