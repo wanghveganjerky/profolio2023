@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 768px) {
   body {
-
+    overflow: hidden;
   }
   .container {
     padding: 0 0px; 
