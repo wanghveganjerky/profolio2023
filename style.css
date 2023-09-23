@@ -23,31 +23,41 @@
   }
 }
 
-.intrContainer {
+.container {
   max-width: 600px; 
   width: 100%;
 }
 
 body {
+  /* font-weight: 400; */
+  /* margin: 0; */
   padding: 0 30px;
   font-family: 'Manrope', sans-serif;
   overflow: auto;
+  /* width: 100%;   */
+  /* display: flex;  
+  justify-content: flex-start; 
+  align-items: flex-start;  */
   -webkit-font-smoothing: antialiased; 
 }
 
-.introText {
+.intro {
   width: 100%;
 }
 
 h1{
   font-size: 1.69em;
   line-height: 1.7;
+  text-align:left;
+  position:relative;
   color:#000000;
+  /* z-index: 2; */
+  background-color: transparent;
 }
 
 h2{
   font-size: 1.2em; 
-  line-height: 1.7;
+  margin-bottom: 7%;
 }
 
 a {
@@ -59,6 +69,7 @@ a:hover {
   color:  #0000ff; 
 }
 
+/* Additional CSS for hover on project's image preview */
 .hoverImagePreview {
   position: absolute;
   display: none;
