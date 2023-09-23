@@ -8,18 +8,7 @@
 @media screen and (max-width: 768px) {
   body {
     overflow: hidden;
-  }
-
-  h1 {
-    font-size: 1.69em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  h1 {
-    font-size: 1.5em;
+    font-size: 14px;
   }
 }
 
@@ -46,7 +35,7 @@ body {
 }
 
 h1{
-  font-size: 1.69em;
+  font-size: 1.81em;
   line-height: 1.7;
   text-align:left;
   position:relative;
