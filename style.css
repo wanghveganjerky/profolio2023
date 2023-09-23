@@ -40,9 +40,7 @@ h2{
 }
 
 li {
-  list-style-type:none; /* Remove default bullet */
-  position: relative;
-  padding-left: 24px; /* Leave space for the custom bullet */
+  list-style-type:circle;
 }
 
 
