@@ -60,7 +60,7 @@ function setTime() {
     timePhrase = "few months ago";
   }
 
-  document.querySelector(".js-last-updated").innerText = "Last updated @ " + timePhrase;
+  document.querySelector(".js-last-updated").innerText = "Updated @ " + timePhrase;
 }
 
 // Run setTime function when the document is fully loaded
