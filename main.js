@@ -44,7 +44,7 @@ function setTime() {
   const minuteMs = 60000;
   const hourMs = 3600000;
   const dayMs = 86400000;
-  const monthMs = 2628000000; // An approximation for a month in milliseconds
+  const monthMs = 2628000000; //  approximation for a month in milliseconds
   
   let timePhrase;
 
