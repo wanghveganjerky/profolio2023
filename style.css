@@ -10,6 +10,11 @@
     overflow: hidden;
     font-size: 9px;
   }
+
+  pre{
+    overflow: hidden;
+    font-size: 9px;
+  }
 }
 
 .introContainer {
