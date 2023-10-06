@@ -19,7 +19,6 @@
   .preWrapper{
       overflow: hidden;
       font-size: 9px;
-    
   }
 }
 
@@ -51,13 +50,13 @@ h2{
 }
 
 h3{
-  font-size: 1.1em; 
+  font-size: 1.3em; 
   /* margin: 1.7; */
 }
 
 ul{
   position: relative;
-  top:-30px;
+  top:-50px;
   margin: 0;
   /* padding-top: 0; */
 }
@@ -101,24 +100,21 @@ pre {
 
 .preWrapper {
   background-color: white;
-  border: 1px solid #00f000 ;
+  /* border: 1px solid #00f000 ; */
   /* margin: 0%; */
   width:85%;
   /* height: 20%; */
   overflow: auto;
-  border-radius: 50px;
+  border-radius: 45px;
 }
 
 ::-webkit-scrollbar{
-  width: 37px;
+  width: 42px;
 }
 
 ::-webkit-scrollbar-track{
   background-color:white;
-
 }
-
-
 
 ::-webkit-scrollbar-thumb{
   box-shadow:inset 0px 0px 2vh 0.3vh #d5e5ff;
