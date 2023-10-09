@@ -67,6 +67,14 @@ function setTime() {
 document.addEventListener('DOMContentLoaded', setTime);
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Assuming you want to update the href attribute
+  const linkOfTheWeek = document.getElementById('linkOfTheWeek');
+  
+  if (linkOfTheWeek) {
+      linkOfTheWeek.href = 'https://freepalestinemovement.org/'; // update with new link URL
+  }
+});
 
 
 
