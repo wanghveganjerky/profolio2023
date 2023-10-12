@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const linkOfTheWeek = document.getElementById('linkOfTheWeek');
   
   if (linkOfTheWeek) {
-      linkOfTheWeek.href = 'https://oneterabyteofkilobyteage.tumblr.com/'; 
+      linkOfTheWeek.href = 'https://www.newyorker.com/culture/photo-booth/life-along-israels-separation-wall'; 
   }
 });
 
