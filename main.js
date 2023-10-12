@@ -1,10 +1,10 @@
-// Fetch all h2 elements within li tags
+// fetch all h2 elements within li tags
 const h2Elements = document.querySelectorAll('li h2');
 // Fetch the preview div and image
 const hoverPreviewDIV = document.getElementById('h2-hover-image-preview-div');
 const hoverPreviewIMG = document.getElementById('h2-hover-image-preview-img');
 
-// Function to show hover preview
+// function to show hover preview
 function showHoverPreview(event) {
   let targetElement = event.target;
 
@@ -12,22 +12,22 @@ function showHoverPreview(event) {
    return;
   }
 
-  // Get the image source from the data attribute
+  // get the image source from the data attribute
   const imgFileName = targetElement.getAttribute('data-img-src');
   // Set the image source
   hoverPreviewIMG.src = `images/${imgFileName}`;
   hoverPreviewDIV.style.left = (event.pageX + 10) + 'px';
   hoverPreviewDIV.style.top = (event.pageY + 10) + 'px';
-  // Show the preview div
+  // show the preview div
   hoverPreviewDIV.style.display = 'block';
 }
 
-// Function to hide preview
+// function to hide preview
 function hideHoverPreview() {
   hoverPreviewDIV.style.display = 'none';
 }
 
-// Attach event listeners
+// attach event listeners
 h2Elements.forEach(h2 => {
   h2.addEventListener('mouseover', showHoverPreview);  // updated to new function name
   h2.addEventListener('mousemove', showHoverPreview);  // updated to new function name
@@ -36,10 +36,10 @@ h2Elements.forEach(h2 => {
 
 
 function setTime() {
-  // Set the updatedAt time to September 23, 2023, at like 5 pm
+  // set the updatedAt time to September 23, 2023, at like 5 pm
   const updatedAt = new Date(2023, 8, 23, 17, 0, 0); // months are zero-based in JavaScript
   const today = new Date();
-  // Calculate the time difference between the current time and the updatedAt time
+  // calculate the time difference between the current time and the updatedAt time
   const timeSince = today - updatedAt;
   const minuteMs = 60000;
   const hourMs = 3600000;
@@ -63,16 +63,14 @@ function setTime() {
   document.querySelector(".js-last-updated").innerText = "Updated @ " + timePhrase;
 }
 
-// Run setTime function when the document is fully loaded
 document.addEventListener('DOMContentLoaded', setTime);
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Assuming you want to update the href attribute
   const linkOfTheWeek = document.getElementById('linkOfTheWeek');
   
   if (linkOfTheWeek) {
-      linkOfTheWeek.href = 'https://freepalestinemovement.org/'; // update with new link URL
+      linkOfTheWeek.href = 'https://oneterabyteofkilobyteage.tumblr.com/'; 
   }
 });
 
