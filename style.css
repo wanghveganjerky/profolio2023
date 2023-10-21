@@ -26,6 +26,7 @@ body {
 
 .introText {
   width: 100%;
+  /* margin-top: 24px; */
 }
 
 h1{
@@ -36,7 +37,7 @@ h1{
 
 h2{
   font-size: 1.2em; 
-  margin: 1.7;
+  /* margin: 1.7; */
 }
 
 h3{
@@ -81,6 +82,24 @@ a:hover {
   max-height: 100%;
 }
 
+::-webkit-scrollbar{
+  width: 42px;
+}
+
+::-webkit-scrollbar-track{
+  background-color:white;
+}
+
+::-webkit-scrollbar-thumb{
+  box-shadow:inset 0px 0px 2vh 0.3vh #d5e5ff;
+  background:linear-gradient(to right, yellow 3%, #00f000 70%);
+  /* background-color:pink; */
+  border-radius:50vh;
+  display:inline-block;
+  /* padding:1.2vh 1.2vh; */
+  text-decoration:none;
+}
+
 pre {
   background-color: white;
   margin: 0; /* reduced margin to 0 to fit within .preWrapper */
@@ -102,25 +121,6 @@ pre {
   border-radius: 45px;
   
 }
-
-::-webkit-scrollbar{
-  width: 42px;
-}
-
-::-webkit-scrollbar-track{
-  background-color:white;
-}
-
-::-webkit-scrollbar-thumb{
-  box-shadow:inset 0px 0px 2vh 0.3vh #d5e5ff;
-  background:linear-gradient(to right, yellow 3%, #00f000 70%);
-  /* background-color:pink; */
-  border-radius:50vh;
-  display:inline-block;
-  /* padding:1.2vh 1.2vh; */
-  text-decoration:none;
-}
-
 
 
 
