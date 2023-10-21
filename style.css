@@ -19,7 +19,7 @@
 
 body {
   padding: 0 30px;
-  margin-top: 20px;
+  margin-top: 30px;
   font-family: 'Manrope', sans-serif;
   overflow: auto;
   -webkit-font-smoothing: antialiased; 
@@ -120,7 +120,6 @@ pre {
   /* height: 20%; */
   overflow: auto;
   border-radius: 45px;
-  
 }
 
 
