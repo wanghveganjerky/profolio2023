@@ -2,6 +2,7 @@
 
 *{
   background-color: white;
+  font-family: 'Manrope', sans-serif;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32" height="32"><circle cx="8" cy="8" r="7" fill="black"/></svg>') 8 8, auto;
 }
 
@@ -20,7 +21,6 @@
 body {
   padding: 0 30px;
   /* margin-top: 25px; */
-  font-family: 'Manrope', sans-serif;
   overflow: auto;
   -webkit-font-smoothing: antialiased; 
 }
@@ -47,7 +47,7 @@ h3{
 }
 
 ul{
-  line-height: 1.5;
+  line-height: 1.5vh;
   margin: 0;
   /* padding-top: 0; */
 }
@@ -102,24 +102,24 @@ a:hover {
 }
 
 pre {
-  background-color: white;
+  /* background-color: white; */
   margin: 0; /* reduced margin to 0 to fit within .preWrapper */
   /* width: 100%; */
   /* height: auto; */
-  overflow-x: auto;
-  overflow-y: auto;
+  /* overflow-x: auto;
+  overflow-y: auto; */
   max-height: 220px;
   /* border-radius: 40px;  */
 }
 
 .preWrapper {
-  background-color: white;
+  /* background-color: white; */
   /* border: 1px solid #00f000 ; */
   /* margin: 0%; */
   width:85%;
   /* height: 20%; */
   overflow: auto;
-  border-radius: 45px;
+  /* border-radius: 45px; */
 }
 
 
