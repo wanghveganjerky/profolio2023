@@ -36,8 +36,8 @@ h2Elements.forEach(h2 => {
 
 // Fetch last updated date from GitHub API
 function fetchLastUpdated() {
-  const repoOwner = 'wanghveganjerky';  // Replace with your GitHub username
-  const repoName = 'profolio2023';  // Replace with your GitHub repository name
+  const repoOwner = 'wanghveganjerky'; 
+  const repoName = 'profolio2023';  
   const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/commits`;
 
   fetch(apiUrl)
@@ -78,7 +78,6 @@ function updateLastUpdated(lastCommitDate) {
 
 document.addEventListener('DOMContentLoaded', function() {
   fetchLastUpdated();
-  // ... other code
 });
 
 document.addEventListener('DOMContentLoaded', function() {
