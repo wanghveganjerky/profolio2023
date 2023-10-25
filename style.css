@@ -31,7 +31,7 @@ body {
 }
 
 h1{
-  font-size: 1.85em;
+  font-size: 1.7em;
   line-height: 1.7;
   color:#000000;
 }
@@ -41,7 +41,7 @@ h2{
 }
 
 h3{
-  font-size: 1.6em; 
+  font-size: 1.5em; 
   line-height: 0.1; 
 }
 
@@ -98,7 +98,7 @@ a:hover {
 .preWrapper {
   width:98%;
   overflow: auto;
-  text-align: center;
+  /* text-align: center; */
   max-height: 240px;
 }
 
