@@ -38,18 +38,16 @@ h1{
 
 h2{
   font-size: 1.2em; 
-  /* margin: 1.7; */
 }
 
 h3{
   font-size: 1.6em; 
-  line-height: 18px;
+  line-height: 1.7px;
 }
 
 ul{
   line-height: 1.5vh;
   margin: 0;
-  /* padding-top: 0; */
 }
 
 li {
@@ -58,7 +56,6 @@ li {
 
 .preWrapper ul li {
   margin-top: -49px; /* Adjust this value as needed */
-  /* margin-bottom: 30px; */
 }
 
 a {
@@ -94,7 +91,6 @@ a:hover {
 ::-webkit-scrollbar-thumb{
   box-shadow:inset 0px 0px 2vh 0.3vh #d5e5ff;
   background:linear-gradient(to right, yellow 3%, #00f000 70%);
-  /* background-color:pink; */
   border-radius:50vh;
   display:inline-block;
   /* padding:1.2vh 1.2vh; */
@@ -102,24 +98,14 @@ a:hover {
 }
 
 pre {
-  /* background-color: white; */
-  margin: 0; /* reduced margin to 0 to fit within .preWrapper */
-  /* width: 100%; */
-  /* height: auto; */
-  /* overflow-x: auto;
-  overflow-y: auto; */
-  max-height: 220px;
-  /* border-radius: 40px;  */
+  margin: 0;
 }
 
 .preWrapper {
-  /* background-color: white; */
-  /* border: 1px solid #00f000 ; */
-  /* margin: 0%; */
+  margin: 0;
   width:85%;
-  /* height: 20%; */
-  overflow: auto;
-  /* border-radius: 45px; */
+  overflow: scroll;
+  max-height: 140px;
 }
 
 
