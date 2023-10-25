@@ -45,17 +45,6 @@ h3{
   line-height: 0.1; 
 }
 
-ul{
-  /* line-height: 1.5vh; */
-  margin-top: 0;
-}
-
-li {
-  margin: 0;
-  padding: 0;
-  list-style-type: circle;
-}
-
 a {
   text-decoration: none; 
   color:  #01EA00; 
@@ -63,19 +52,6 @@ a {
 
 a:hover {
   color:  #0000ff; 
-}
-
-.hoverImagePreview {
-  position: absolute;
-  display: none;
-  width: 200px;
-  height: auto;
-  z-index: 100;
-}
-
-.hoverImagePreview img {
-  max-width: 100%;
-  max-height: 100%;
 }
 
 ::-webkit-scrollbar{
@@ -100,6 +76,19 @@ a:hover {
   overflow: auto;
   /* text-align: center; */
   max-height: 240px;
+}
+
+.hoverImagePreview {
+  position: absolute;
+  display: none;
+  width: 200px;
+  height: auto;
+  z-index: 100;
+}
+
+.hoverImagePreview img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 
