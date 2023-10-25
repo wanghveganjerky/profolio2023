@@ -65,6 +65,22 @@ function setTime() {
 
 document.addEventListener('DOMContentLoaded', setTime);
 
+function fetchLastUpdated() {
+  const repoOwner = 'wanghveganjerky';
+  const repoName = 'profolio2023';
+  const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/commits`;
+
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(commits => {
+      if (commits.length > 0) {
+        const lastCommitDate = new Date(commits[0].commit.committer.date);
+        updateLastUpdated(lastCommitDate);
+      }
+    })
+    .catch(error => console.error('Failed to fetch last commit date', error));
+}
+
 
 document.addEventListener('DOMContentLoaded', function() {
   const linkOfTheWeek = document.getElementById('linkOfTheWeek');
