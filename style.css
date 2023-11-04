@@ -70,7 +70,7 @@ a:hover {
   max-height: 240px;
 }
 
-.hoverImagePreview {
+/* .hoverImagePreview {
   position: absolute;
   display: none;
   width: 200px;
@@ -81,4 +81,4 @@ a:hover {
 .hoverImagePreview img {
   max-width: 100%;
   max-height: 100%;
-}
+} */
