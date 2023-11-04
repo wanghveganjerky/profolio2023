@@ -70,6 +70,12 @@ a:hover {
   max-height: 240px;
 }
 
+::selection {
+  color: #F7F7F4;
+  background-color: #00f000;
+}
+
+
 /* .hoverImagePreview {
   position: absolute;
   display: none;
