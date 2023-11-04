@@ -82,14 +82,3 @@ a:hover {
   max-width: 100%;
   max-height: 100%;
 }
-
-.cloud {
-  white-space: pre;
-  position: absolute;
-  left: -100px; /* start off-screen */
-  top: 120px;
-  user-select: none;
-  pointer-events: none;
-  color: #00ff00;
-  background: none;
-}
