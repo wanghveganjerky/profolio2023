@@ -51,26 +51,25 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// We'll keep the WINDOWS object in case you need to reference the window later.
+// we'll keep the WINDOWS object in case you need to reference the window later.
 let WINDOWS = {};
 
 function openBlogWindow() {
-  // Define the dimensions and position for the new window to center it
-  let winW = 428; // Width for iPhone 15 Pro Max screen or your desired width
-  let winH = 800; // Height for iPhone 15 Pro Max screen or your desired height
+  // define the dimensions and position for the new window to center it
+  let winW = 500;
+  let winH = 500; 
   let left = (window.screen.width / 2) - (winW / 2);
   let top = (window.screen.height / 2) - (winH / 2);
   
   // Open the new window with the specified features
   WINDOWS.blog = window.open("blogs.html", "blog", "location=no,toolbar=no,menubar=no,scrollbars=yes,resizable=yes,width=" + winW + ",height=" + winH + ",top=" + top + ",left=" + left);
 
-  // Try to focus the new window if possible
+  // Try to focus the new window if possible, just in case in the back page
   if (WINDOWS.blog) {
       WINDOWS.blog.focus();
   }
 }
 
-// We don't need jQuery for this simple action, plain JavaScript is enough.
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('archivesLink').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default anchor behavior
