@@ -6,21 +6,15 @@
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32" height="32"><circle cx="8" cy="8" r="7" fill="black"/></svg>') 8 8, auto;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 9px;
-  }
+body {
+  padding: 0 30px;
+  overflow: auto;
+  -webkit-font-smoothing: antialiased; 
 }
 
 .introContainer {
   max-width: 600px; 
   width: 100%;
-}
-
-body {
-  padding: 0 30px;
-  overflow: auto;
-  -webkit-font-smoothing: antialiased; 
 }
 
 h1{
@@ -64,16 +58,17 @@ a:hover {
   text-decoration:none;
 }
 
-.preWrapper {
-  width:98%;
-  overflow: auto;
-  max-height: 240px;
-}
-
 ::selection {
   color: #F7F7F4;
   background-color: #00f000;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 9px;
+  }
+}
+
 
 
 /* .hoverImagePreview {

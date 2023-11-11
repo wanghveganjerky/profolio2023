@@ -55,16 +55,16 @@ document.addEventListener('DOMContentLoaded', function() {
 let WINDOWS = {};
 
 function openBlogWindow() {
-  // define the dimensions and position for the new window to center it
+  // define the dimensions and position for the new window 
   let winW = 500;
   let winH = 500; 
   let left = (window.screen.width / 2) - (winW / 2);
   let top = (window.screen.height / 2) - (winH / 2);
   
-  // Open the new window with the specified features
+  // open the new window with the specified features
   WINDOWS.blog = window.open("blogs.html", "blog", "location=no,toolbar=no,menubar=no,scrollbars=yes,resizable=yes,width=" + winW + ",height=" + winH + ",top=" + top + ",left=" + left);
 
-  // Try to focus the new window if possible, just in case in the back page
+  // try to focus the new window if possible, just in case in the back page
   if (WINDOWS.blog) {
       WINDOWS.blog.focus();
   }
@@ -72,7 +72,7 @@ function openBlogWindow() {
 
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('archivesLink').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor behavior
+    event.preventDefault(); // prevent the default anchor behavior
     openBlogWindow();
   });
 });
