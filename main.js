@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const linkOfTheWeek = document.getElementById('linkOfTheWeek');
   
   if (linkOfTheWeek) {
-    linkOfTheWeek.href = 'https://www.sourcetype.com/editorial/14248/ground-writing'; 
+    linkOfTheWeek.href = 'https://thisismold.com/mold-magazine/flavor-chemistry-flavorama-arielle-johnson'; 
   }
 });
 
@@ -133,3 +133,5 @@ document.addEventListener('DOMContentLoaded', function() {
 // ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛⬛🏻🟦⬛⬜⬜⬜⬜
 // ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛🟦🟦🟦⬛⬜⬜⬜⬜
 // ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛⬛⬛⬜⬜⬜⬜⬜
+
+
